@@ -6,55 +6,64 @@ public class Main {
 
         // задание 1
 
-        int[] weights = new int[] {10, 15, 20};
+        int[] weights = new int[3];
+        weights[0] = 10;
+        weights[1] = 15;
+        weights[2] = 20;
         float[] height = {1.57f, 7.654f, 9.986f};
         int[] date = {1991, 1992, 1993};
 
         // задание 2
 
-        for (int i = 0; weights.length <= 20; i++) {
-            System.out.println(weights[0] + "," + weights[1] + "," + weights[2]);
-            if (i == 20);
-            break;
+        for (int i = 0; i < weights.length; i++) {
+            if (i == weights.length - 1)
+                System.out.print(weights[i]);
+            else System.out.print(weights[i] + ",");
         }
-        for (float j = 0; height.length < 10; j++) {
-            System.out.println(height[0] + "," + height[1] + "," + height[2]);
-             if (j < 10);
-              break;
+        System.out.println();
+        for (int j = 0; j < height.length; j++) {
+            if (j == height.length - 1)
+                System.out.print(height[j]);
+            else System.out.print(height[j] + ",");
         }
-        for (int d = 0; date.length < 1995; d++) {
-            System.out.println(date[0] + "," + date[1] + "," + date[2]);
-            if (d == 2000);
-            break;
+        System.out.println();
+        for (int d = 0; d < date.length; d++) {
+            if (d == date.length - 1)
+                System.out.print(date[d]);
+            else System.out.print(date[d] + ",");
         }
         // задание 3
-        for (int i = 20; weights.length >= 0; i--) {
-            System.out.println(weights[2] + "," + weights[1] + "," + weights[0]);
-            if (i >= 0);
-            break;
+
+        System.out.println();
+        for (int i = weights.length - 1; i >= 0; i--) {
+            if (i == 0)
+                System.out.print(weights[i]);
+            else System.out.print(weights[i] + ",");
         }
-        for (float j = 10; height.length >= 0; j--) {
-            System.out.println(height[2] + "," + height[1] + "," + height[0]);
-            if (j >= 0);
-            break;
+        System.out.println();
+        for (int j = height.length - 1; j >= 0; j--) {
+            if (j == 0)
+                System.out.print(height[j]);
+            else
+                System.out.print(height[j] + ",");
         }
-        for (int d = 1995; date.length >= 0; d++) {
-            System.out.println(date[2] + "," + date[1] + "," + date[0]);
-            if (d >= 0);
-            break;
+        System.out.println();
+        for (int d = date.length - 1; d >= 0; d--) {
+            if (d == 0)
+                System.out.print(date[d]);
+            else
+                System.out.print(date[d] + ",");
         }
 
         // задание 4
 
         int[] even = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        for (int i = 0; i < even.length; i++) {
-            if (even[i] % 2 != 0)
-                even[i] = even[i] + 1;
-                System.out.println(even[i]);
-
-
+        for (int e = 0; e < even.length; e++) {
+            if (even[e] % 2 != 0)
+                even[e] = even[e] + 1;
+            System.out.println(even[e]);
         }
 
-
     }
+
 }
